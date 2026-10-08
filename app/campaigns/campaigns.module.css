@@ -1,0 +1,760 @@
+.page {
+  min-height: 100%;
+  padding: 32px;
+  background: #f5f7fb;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 7px;
+  color: #1877f2;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.header h1 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 30px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  margin: 8px 0 0;
+  color: #718096;
+  font-size: 12px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.createButton,
+.save {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  border: 0;
+  border-radius: 8px;
+
+  background: #1877f2;
+  color: #fff;
+
+  padding: 11px 16px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 7px 18px rgba(24, 119, 242, 0.2);
+
+  transition:
+    transform 0.15s ease,
+    background 0.15s ease;
+}
+
+.createButton:hover,
+.save:hover {
+  background: #1267d6;
+  transform: translateY(-1px);
+}
+
+.createButton:disabled,
+.save:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  min-height: 86px;
+
+  padding: 17px;
+
+  background: #fff;
+  border: 1px solid #e3e8ef;
+  border-radius: 12px;
+}
+
+.statIcon {
+  display: grid;
+  place-items: center;
+
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  background: #eaf3ff;
+  color: #1877f2;
+
+  border-radius: 9px;
+}
+
+.stat span {
+  display: block;
+  color: #8b95a7;
+  font-size: 10px;
+}
+
+.stat strong {
+  display: block;
+  margin-top: 5px;
+  color: #111827;
+  font-size: 19px;
+  font-weight: 750;
+}
+
+/* =========================
+   MAIN CARD
+========================= */
+
+.card {
+  overflow: hidden;
+
+  background: #fff;
+  border: 1px solid #e3e8ef;
+  border-radius: 13px;
+}
+
+/* =========================
+   TOOLBAR
+========================= */
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  padding: 19px;
+}
+
+.toolbar h2 {
+  margin: 0;
+  color: #111827;
+  font-size: 15px;
+}
+
+.toolbar p {
+  margin: 4px 0 0;
+  color: #8b95a7;
+  font-size: 10px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  width: 280px;
+  height: 38px;
+
+  padding: 0 11px;
+
+  color: #8b95a7;
+
+  border: 1px solid #dfe5ec;
+  border-radius: 8px;
+}
+
+.search:focus-within {
+  border-color: #1877f2;
+  box-shadow: 0 0 0 3px #eaf3ff;
+}
+
+.search input {
+  width: 100%;
+
+  border: 0;
+  outline: 0;
+
+  background: transparent;
+
+  color: #1f2937;
+  font-size: 11px;
+}
+
+.search input::placeholder {
+  color: #9aa4b2;
+}
+
+/* =========================
+   FILTERS
+========================= */
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 0 19px 15px;
+}
+
+.filterButton,
+.filterActive {
+  height: 31px;
+
+  padding: 0 13px;
+
+  border-radius: 7px;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.filterButton {
+  border: 1px solid #dfe5ec;
+  background: #fff;
+  color: #64748b;
+}
+
+.filterButton:hover {
+  background: #f5f8fc;
+  color: #1877f2;
+}
+
+.filterActive {
+  border: 1px solid #1877f2;
+  background: #1877f2;
+  color: #fff;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tableWrapper table {
+  width: 100%;
+  min-width: 1050px;
+
+  border-collapse: collapse;
+}
+
+.tableWrapper th {
+  height: 42px;
+
+  padding: 0 16px;
+
+  text-align: left;
+
+  color: #8b95a7;
+  font-size: 9px;
+  font-weight: 700;
+
+  border-top: 1px solid #edf0f4;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.tableWrapper td {
+  padding: 15px 16px;
+
+  color: #64748b;
+  font-size: 10px;
+
+  border-bottom: 1px solid #f0f2f5;
+
+  white-space: nowrap;
+}
+
+.tableWrapper tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.tableWrapper tbody tr:hover {
+  background: #fafcff;
+}
+
+/* =========================
+   CAMPAIGN NAME
+========================= */
+
+.campaignName {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  color: #1f2937;
+}
+
+.campaignName strong {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.logo {
+  display: grid;
+  place-items: center;
+
+  width: 30px;
+  height: 30px;
+
+  flex-shrink: 0;
+
+  background: #eaf3ff;
+  color: #1877f2;
+
+  border-radius: 7px;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+/* =========================
+   PLATFORM
+========================= */
+
+.platform {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 5px 8px;
+
+  background: #f1f5f9;
+  color: #475569;
+
+  border-radius: 6px;
+
+  font-size: 9px;
+  font-weight: 600;
+}
+
+/* =========================
+   MONEY
+========================= */
+
+.money {
+  color: #111827;
+  font-weight: 700;
+}
+
+/* =========================
+   STATUS
+========================= */
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 5px 9px;
+
+  border-radius: 20px;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.status i {
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+}
+
+.active {
+  background: #eaf8ef;
+  color: #15803d;
+}
+
+.active i {
+  background: #22c55e;
+}
+
+.paused {
+  background: #f1f3f5;
+  color: #64748b;
+}
+
+.paused i {
+  background: #94a3b8;
+}
+
+.draft {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.draft i {
+  background: #94a3b8;
+}
+
+.completed {
+  background: #eaf3ff;
+  color: #1877f2;
+}
+
+.completed i {
+  background: #1877f2;
+}
+
+/* =========================
+   ACTIONS
+========================= */
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.actions button {
+  display: grid;
+  place-items: center;
+
+  width: 30px;
+  height: 30px;
+
+  border: 0;
+  border-radius: 6px;
+
+  background: transparent;
+  color: #718096;
+
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background: #f1f6ff;
+  color: #1877f2;
+}
+
+.actions button:last-child:hover {
+  background: #fff1f2;
+  color: #dc2626;
+}
+
+/* =========================
+   EMPTY
+========================= */
+
+.empty {
+  height: 170px;
+
+  text-align: center;
+
+  color: #8b95a7;
+}
+
+.empty svg {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.empty strong,
+.empty span {
+  display: block;
+}
+
+.empty strong {
+  margin-bottom: 4px;
+
+  color: #64748b;
+  font-size: 11px;
+}
+
+.empty span {
+  font-size: 10px;
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+
+  z-index: 1000;
+
+  display: grid;
+  place-items: center;
+
+  padding: 20px;
+
+  background: rgba(15, 23, 42, 0.45);
+
+  backdrop-filter: blur(4px);
+}
+
+.modal {
+  width: 100%;
+  max-width: 600px;
+
+  max-height: calc(100vh - 40px);
+
+  overflow-y: auto;
+
+  background: #fff;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 25px 70px rgba(15, 23, 42, 0.22);
+
+  animation: modalIn 0.2s ease;
+}
+
+.modalHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+
+  padding: 20px;
+
+  border-bottom: 1px solid #edf0f4;
+}
+
+.modalHeader span {
+  color: #1877f2;
+
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.modalHeader h2 {
+  margin: 6px 0 0;
+
+  color: #111827;
+
+  font-size: 19px;
+}
+
+.modalHeader button {
+  display: grid;
+  place-items: center;
+
+  width: 32px;
+  height: 32px;
+
+  border: 0;
+  border-radius: 7px;
+
+  background: #f5f7fa;
+  color: #64748b;
+
+  cursor: pointer;
+}
+
+.modalHeader button:hover {
+  background: #edf2f7;
+}
+
+.modalHeader button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.modal form {
+  padding: 20px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.modal label {
+  display: block;
+
+  color: #475569;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.modal input,
+.modal select {
+  display: block;
+
+  width: 100%;
+  height: 42px;
+
+  margin-top: 7px;
+
+  padding: 0 11px;
+
+  border: 1px solid #dfe5ec;
+  border-radius: 8px;
+
+  outline: 0;
+
+  background: #fff;
+
+  color: #1f2937;
+
+  font-size: 11px;
+
+  box-sizing: border-box;
+}
+
+.modal input:focus,
+.modal select:focus {
+  border-color: #1877f2;
+
+  box-shadow:
+    0 0 0 3px #eaf3ff;
+}
+
+/* =========================
+   MODAL ACTIONS
+========================= */
+
+.modalActions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 9px;
+
+  margin-top: 22px;
+}
+
+.cancel {
+  height: 40px;
+
+  padding: 0 15px;
+
+  border: 1px solid #dfe5ec;
+  border-radius: 8px;
+
+  background: #fff;
+  color: #64748b;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.cancel:hover {
+  background: #f8fafc;
+}
+
+.cancel:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .page {
+    padding: 22px 16px;
+  }
+
+  .header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .createButton {
+    width: 100%;
+  }
+
+  .toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .search {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    overflow-x: auto;
+  }
+
+  .filterButton,
+  .filterActive {
+    flex-shrink: 0;
+  }
+
+  .modalOverlay {
+    padding: 10px;
+  }
+
+  .modal {
+    max-height: calc(100vh - 20px);
+  }
+}

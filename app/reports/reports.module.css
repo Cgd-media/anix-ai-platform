@@ -1,0 +1,71 @@
+.page {
+  padding: 32px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header p {
+  color: #1877f2;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.header h1 {
+  margin: 7px 0;
+  font-size: 29px;
+}
+
+.header span {
+  color: #7b8798;
+  font-size: 12px;
+}
+
+.header button {
+  border: 0;
+  background: #1877f2;
+  color: white;
+  padding: 11px 15px;
+  border-radius: 8px;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.card {
+  margin-top: 25px;
+  background: white;
+  border: 1px solid #e6eaf0;
+  border-radius: 13px;
+  padding: 45px;
+  text-align: center;
+  color: #1877f2;
+}
+
+.card h2 {
+  color: #111827;
+}
+
+.card p {
+  color: #7b8798;
+  font-size: 12px;
+}
+
+@media (max-width: 700px) {
+  .page {
+    padding: 22px 16px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}

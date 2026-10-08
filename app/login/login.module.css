@@ -1,0 +1,265 @@
+.page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border: 1px solid #e3e8ef;
+  border-radius: 16px;
+  padding: 34px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+}
+
+/* Brand */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 42px;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #1877f2;
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.brandText {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.brandText strong {
+  color: #0f172a;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+}
+
+.brandText span {
+  color: #8a96a8;
+  font-size: 9px;
+}
+
+/* Heading */
+
+.heading {
+  margin-bottom: 28px;
+}
+
+.heading h1 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 27px;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+}
+
+.heading p {
+  margin: 8px 0 0;
+  color: #7b8798;
+  font-size: 12px;
+}
+
+/* Form */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.labelRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label {
+  color: #172033;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.forgot {
+  color: #1877f2;
+  font-size: 10px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+.input {
+  width: 100%;
+  height: 43px;
+  padding: 0 13px;
+  border: 1px solid #d9e0e9;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #172033;
+  font-size: 11px;
+  outline: none;
+  transition: 0.2s ease;
+  box-sizing: border-box;
+}
+
+.input::placeholder {
+  color: #a0aaba;
+}
+
+.input:focus {
+  border-color: #1877f2;
+  box-shadow: 0 0 0 3px rgba(24, 119, 242, 0.1);
+}
+
+/* Password */
+
+.passwordBox {
+  position: relative;
+}
+
+.passwordBox .input {
+  padding-right: 58px;
+}
+
+.showPassword {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  color: #1877f2;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Remember */
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -2px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #7b8798;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.remember input {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  accent-color: #1877f2;
+}
+
+/* Button */
+
+.button {
+  width: 100%;
+  height: 44px;
+  margin-top: 4px;
+  border: 0;
+  border-radius: 8px;
+  background: #1877f2;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.button:hover {
+  background: #1267d6;
+}
+
+.button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* Error */
+
+.error {
+  margin: -5px 0 0;
+  padding: 9px 11px;
+  border-radius: 7px;
+  background: #fff1f2;
+  color: #dc2626;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 1px solid #edf0f4;
+  text-align: center;
+}
+
+.footer strong {
+  display: block;
+  color: #c0c7d2;
+  font-size: 8px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.footer span {
+  color: #a0aaba;
+  font-size: 9px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .page {
+    padding: 18px;
+  }
+
+  .card {
+    padding: 28px 22px;
+    border-radius: 14px;
+  }
+
+  .brand {
+    margin-bottom: 34px;
+  }
+
+  .heading h1 {
+    font-size: 24px;
+  }
+}

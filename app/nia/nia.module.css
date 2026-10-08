@@ -1,0 +1,72 @@
+.page {
+  padding: 32px;
+}
+
+.hero {
+  background: white;
+  border: 1px solid #e6eaf0;
+  border-radius: 16px;
+  padding: 65px 30px;
+  text-align: center;
+}
+
+.icon {
+  width: 58px;
+  height: 58px;
+  margin: auto;
+  border-radius: 15px;
+  background: #eaf3ff;
+  color: #1877f2;
+  display: grid;
+  place-items: center;
+}
+
+.hero p {
+  color: #1877f2;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-top: 22px;
+}
+
+.hero h1 {
+  font-size: 30px;
+  margin: 8px 0;
+}
+
+.hero span {
+  color: #7b8798;
+  font-size: 12px;
+}
+
+.inputArea {
+  max-width: 700px;
+  height: 52px;
+  margin: 22px auto;
+  background: white;
+  border: 1px solid #dfe5ec;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 8px 0 14px;
+  color: #1877f2;
+}
+
+.inputArea input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  font-size: 11px;
+}
+
+.inputArea button {
+  height: 36px;
+  padding: 0 15px;
+  border: 0;
+  border-radius: 7px;
+  background: #1877f2;
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+}
